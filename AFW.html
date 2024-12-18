@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AFW.css">
+    <title>Fotózás és Drónozás</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Fotózás és Drónozás</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Rólunk</a></li>
+                    <li><a href="#services">Szolgáltatások</a></li>
+                    <li><a href="#portfolio">Portfólió</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2 id="egy">Fedezd fel a világot a levegőből!</h2>
+            <p id="ketto">Professzionális fotós és drónos szolgáltatások, amelyek életre keltik az emlékeket.</p>
+            <a href="#contact" class="btn">Lépj velünk kapcsolatba</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Rólunk</h2>
+            <p>Mi egy professzionális fotós és drónos csapat vagyunk, akik a legjobb minőségű szolgáltatásokat nyújtják. Szenvedélyünk a fényképezés és a drónos felvételek készítése, hogy megörökíthessük a legszebb pillanatokat.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Szolgáltatások</h2>
+            <div class="service">
+                <h3>Fotózás</h3>
+                <p>Professzionális fotózási szolgáltatások különböző eseményekre, mint esküvők, rendezvények és portrék.</p>
+            </div>
+            <div class="service">
+                <h3>Drónos Felvételek</h3>
+                <p>Magas minőségű drónos felvételek készítése, amelyek új perspektívát adnak a projekteknek.</p>
+            </div>
+            <div class="service">
+                <h3>Utómunka</h3>
+                <p>Professzionális utómunka szolgáltatások, hogy a legjobb formájukat hozzuk ki a felvételekből.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfólió</h2>
+            <div class="gallery">
+                <img src="IMG_5361szerkesztettvaltozat.JPG" alt="Fotó 1" onclick="openLightbox(); currentSlide(1)">
+                <img src="IMG_5332szerkesztettvaltozat.JPG" alt="Fotó 2" onclick="openLightbox(); currentSlide(2)">
+                <img src="IMG_5353szerkesztettvaltozat.JPG" alt="Fotó 3" onclick="openLightbox(); currentSlide(3)">
+                <img src="IMG_5424szerkesztettvaltozat.JPG" alt="Fotó 4" onclick="openLightbox(); currentSlide(4)">
+                <img src="IMG_5441szerkesztettvaltozat.JPG" alt="Fotó 5" onclick="openLightbox(); currentSlide(5)">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kapcsolat</h2>
+ <form id="contact-form">
+                <input type="text" placeholder="Név" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Üzenet" required></textarea>
+                <button type="submit">Küldés</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <div class="slides">
+                <img class="lightbox-slide" src="image1.jpg" alt="Fotó 1">
+                <img class="lightbox-slide" src="image2.jpg" alt="Fotó 2">
+                <img class="lightbox-slide" src="image3.jpg" alt="Fotó 3">
+                <img class="lightbox-slide" src="image4.jpg" alt="Fotó 4">
+                <img class="lightbox-slide" src="image5.jpg" alt="Fotó 5">
+                <img class="lightbox-slide" src="image6.jpg" alt="Fotó 6">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Fotós és Drónos Szolgáltatások. Minden jog fenntartva.</p>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="container">
+            <p>Kapcsolat: albertkomives14@gmail.com</p>
+            <p>Telefon: +36 30 986 3605</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
